@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity {
 
     EditText e1,e2,e3;
@@ -38,15 +40,17 @@ public class MainActivity extends AppCompatActivity {
 
                 float final_r = 1.0f;
 
-                for (int i = 0; i < n*12; i++) {
+                for (int i = 0; i < n; i++) {
 
                     final_r = final_r*(1+r);
 
                 }
 
                 float f_ans = p*r*(final_r/(final_r-1));
+                DecimalFormat df = new DecimalFormat();
+                df.setMaximumFractionDigits(2);
 
-                result.setText("Your payable amount With Interes.t : "+(f_ans+p)0+"\n\n"+"Your Interest Is "+f_ans);
+                result.setText("Your payable amount With Interest : "+df.format(f_ans+p)+"\n\n"+"Your Interest Is "+df.format(f_ans));
             }
         });
 
