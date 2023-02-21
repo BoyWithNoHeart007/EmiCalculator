@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
                 float final_r = 1.0f;
 
-                for (int i = 0; i < n; i++) {
+                for (int i = 0; i < n/12; i++) {
 
                     final_r = final_r*(1+r);
 
