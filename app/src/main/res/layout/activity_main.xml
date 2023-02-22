@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:hint="Interest"
         android:textSize="25dp"
-        android:inputType="number"/>
+        android:inputType="numberDecimal"/>
 
     <EditText
         android:id="@+id/e3"
